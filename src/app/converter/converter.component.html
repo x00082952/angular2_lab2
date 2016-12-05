@@ -1,0 +1,8 @@
+<p>
+  <!-- Updates the output after each keypress -->
+  <input #distanceMiles (keyup)="0" distanceMiles.value=distanceKilometers.value />
+</p>
+<p>
+  <input #distanceKilometers (keyup)="0" distanceKilometers.value=distanceMiles.value />
+</p>
+<h3 class="converter">{{clickMessage}}</h3>
